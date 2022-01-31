@@ -25,7 +25,7 @@ public class ClientUDP {
                     message = "message " + i + " client " + id;
                     System.out.println("envoi " + message);
                     socket.send(new DatagramPacket(message.getBytes(), message.length(), adresse, port));
-//                    Thread.sleep(1); // Et si on l'enlève, il manquera plus de paquets à l'arrivée ...
+                    // Thread.sleep(1); // Lorsqu'il est commenté, il manque nettement plus de paquets à l'arrivée ...
                 }
             } catch (Exception e) {
                 e.printStackTrace();
