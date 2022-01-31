@@ -74,7 +74,7 @@ public class TestWN extends Application {
                         verrou.notify();
                     }
                 } else {
-                    // on n'est pas en attente du clic : on ne le traite
+                    // on n'est pas en attente du clic : on ne le traite pas
                     ta.appendText("Clic sur un rectangle non traité car pas en attente d'un clic\n");
                 }
             });
